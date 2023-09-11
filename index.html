@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Sweet Alert -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.min.css">
+  <!-- Iconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fit Store</title>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-rgb(0, 236, 142)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fit Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+          </ul>
+          <ul>
+            <select id="selectOrden" class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <option selected>Ordenar por:</option>
+              <option value="1" id="mayMenBtn">Mayor a menor</option>
+              <option value="2" id="menMayBtn">Menor a mayor</option>
+              <option value="3">Ordenar por Tipo</option>
+            </select>
+          </ul>
+          <ul style="list-style: none;" className="navbar-nav me-auto">
+            <li className="nav-item ">
+              <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModalCarrito" class="btn btn-secondary"><i
+                  class="fas fa-shopping-cart fa-1x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <div id="fecha">
+  
+  </div>
+  <div id="hora">
+  
+  </div>
+  <div class="section">
+    <section class="section1 parte1">
+      <div class="titulo">
+        <h1>SUPPS</h1>
+      </div>
+
+      <!--BOTONES-->
+      <div class="rowBtn">
+        <div class="m-1 col-lg-2">
+          <button id="themeBtn" class="btn btn-outline-dark">Cambiar Tema</button>
+      </div>
+      </div>
+      <section class="section2">
+        <div class="titulo_section2">
+          <div class="titulo">
+            <h2>CATÁLOGO</h2>
+          </div>
+        </div>
+      
+          <!-- Loader-->
+    <h3 id="loaderTexto" class="text-gray text-center">Cargando Productos...</h3>
+    <div id="loader" class="d-flex justify-content-center">
+      <div class="spinner-border text-gray" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+    </div>
+  </section>
+      <!-- section para cards creadas desde JS -->
+      <section class="container">
+        <div class="row" id="suplementos">
+        </div>
+      </section>
+  </div>
+  <!-- CARRUSEL -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="height: 400px;">
+      <div class="carousel-item active">
+        <img src="img/carrusel/FIT1.jpeg" class="d-block w-100" alt="..."
+          style="max-width: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel/FIT2.jpeg" class="d-block w-100" alt="..."
+          style="max-width: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel/FIT3.jpeg" class="d-block w-100" alt="..."
+          style="max-width: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel/FIT4.jpeg" class="d-block w-100" alt="..." style="max-width: 600px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carrusel/FIT5.jpeg" class="d-block w-100" alt="..."
+          style="max-width: 600px;">
+      </div>
+    </div>
+  </div>
+  <div class="imgText">
+    <div class="section1_text">
+      <h3>
+        FIT STORE
+      </h3>
+
+      <p>En nuestro sitio encontrarás los mejores suplementos para llevar acabo tu transformación física.
+        Descubrirás una gran variedad de opciones para distintas disciplinas de competición y recreación.
+        Nuestros expertos te ayudarán a encontrar el suplemento ideal para ti, teniendo en cuenta todos los aspectos
+        importantes al momento de elegir una suplemento que cubra tus necesidades de acuerdo a tus necesidades.
+      </p>
+
+    </div>
+
+
+
+    </section>
+
+    <!--Modal Carrito-->
+    <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="modal-bodyCarrito">
+
+          </div>
+          <div class="row ml-ato">
+            <p id="precioTotal">El Precio total es MX:</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" data-bs-dismiss="modal" class="btn btn-success" id="botonFinalizarCompra">Finalizar
+              Compra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sweeet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.18/dist/sweetalert2.all.min.js"></script>
+    <!-- Luxon -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <!-- Tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+    <!-- Mí JS -->
+    <script src="class.js"></script> 
+    <script src="main.js"></script>
+</body>
+
+</html>

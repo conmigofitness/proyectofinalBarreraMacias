@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "marca": "WHEY PROTEIN",
+    "modelo": "PROTEINA",
+    "tipo": "PROTE",
+    "sabor": "fresa",
+    "tamaño": "M",
+    "precio": 5000,
+    "imagen": "specializedMtb.png"
+  },
+  {
+    "id": 2,
+    "marca": "TOP1",
+    "modelo": "EAA + BCAA",
+    "tipo": "INTRA",
+    "sabor": "jamaica",
+    "tamaño": "R",
+    "precio": 4850,
+    "imagen": "meridaMtb.png"
+  },
+  {
+    "id": 3,
+    "marca": "PRE WORKOUT",
+    "modelo": "PRE WORKOUT",
+    "tipo": "PRE",
+    "sabor": "mango",
+    "tamaño": "R",
+    "precio": 2600,
+    "imagen": "scottMtb.png"
+  },
+  {
+    "id": 4,
+    "marca": "CREATINA",
+    "modelo": "POST",
+    "tipo": "POST",
+    "sabor": "unflavored",
+    "tamaño": "R",
+    "precio": 3600,
+    "imagen": "trekMtb.png"
+  },
+  {
+    "id": 5,
+    "marca": "WHEY PROTEIN 12 LBS",
+    "modelo": "PROTEINA",
+    "tipo": "PROTE",
+    "sabor": "chocolate",
+    "tamaño": "G",
+    "precio": 4450,
+    "imagen": "specializedRuta.png"
+  },
+  {
+    "id": 6,
+    "marca": "Glutamina",
+    "modelo": "POST",
+    "tipo": "POST",
+    "sabor": "unflavored",
+    "tamaño": "R",
+    "precio": 3850,
+    "imagen": "meridaRuta.png"
+  }
+]

@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+#hora {
+  width: 100%;
+  background-color: rgb(94, 94, 94);
+  border-bottom: solid 5px rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+  font-size: 30px;
+}
+#fecha {
+  border-color: 2px solid rgb(154, 95, 0);
+  color: rgb(54, 54, 54);
+  font-weight: bolder;
+  background: linear-gradient(
+    90deg,
+    rgba(180, 121, 58, 0.1) 0%,
+    rgba(230, 226, 102, 1) 50%,
+    rgba(236, 140, 4, 1) 100%
+  );
+  width: 100%;
+  text-align: center;
+}
+.modal-content {
+  color: rgb(255, 255, 255);
+  background: #3e3c3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+.card-body {
+  background: #3e3c3c;
+  border-radius: 10px;
+}
+#modal-bodyCarrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  background: rgb(193, 165, 126);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}

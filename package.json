@@ -1,0 +1,12 @@
+{
+  "name": "preentrega3js-david-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "preEntrega3David.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

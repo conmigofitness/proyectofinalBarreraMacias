@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+#hora {
+  width: 100%;
+  background-color: rgb(0, 60, 255);
+  border-bottom: solid 5px rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  color: rgb(0, 136, 255);
+  font-size: 40px;
+}
+
+#fecha {
+  border-color: 2px solid rgb(154, 95, 0);
+  color: rgb(54, 54, 54);
+  font-weight: bolder;
+  background: linear-gradient(
+    90deg,
+    rgba(180, 121, 58, 0.1) 0%,
+    rgb(230, 226, 102) 50%,
+    rgb(236, 140, 4) 100%
+  );
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content {
+  color: rgb(255, 255, 255);
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+.card-body {
+  background: #000000;
+  border-radius: 10px;
+}
+
+#modal-bodyCarrito {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  background: rgb(0, 60, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(250, 200, 150) !important;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  width: 100%;
+  background-color: rgb(0, 60, 255);
+  border-bottom: solid 5px rgb(0, 0, 0);
+}
+header nav .navbar #btn-search {
+  background-color: #999999;
+  background-color: rgb(94, 94, 94);
+}
+header nav ul {
+  list-style: none;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.section .section1 {
+  width: 100%;
+}
+.section .section1 .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 60, 255);
+  text-align: center;
+  width: 100%;
+}
+.section .section1 .titulo h1 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.section .section1 .rowBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.section .section1 .rowBtn #themeBtn,
+.section .section1 .rowBtn #verCatalogo,
+.section .section1 .rowBtn #ocultarCatalogo {
+  border-color: 2px solid rgb(154, 95, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 60, 255);
+}
+.section .section2 {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(209, 170, 197);
+}
+.section .section2 .titulo_section2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.section .section2 .titulo_section2 .titulo {
+  width: 100%;
+  border-bottom: solid 3px rgb(25, 25, 25);
+}
+.section .section2 .titulo_section2 .titulo h2 {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+.section .container .row {
+  width: 100%;
+}
+.section .container .card {
+  height: 485px;
+  margin: 10px;
+  gap: 10px;
+  background-color: rgb(94, 94, 94);
+}
+.section .container .card .card-body {
+  background-color: rgb(180, 180, 180);
+}
+.section .container .card img {
+  height: 219px;
+  object-fit: scale-down;
+  background-color: rgb(255, 255, 255);
+}
+.section .container .card button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.imgText {
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(250, 200, 150);
+}
+.imgText .section1_text {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(0, 60, 255);
+  width: 100%;
+  font-size: 10px;
+}
+.imgText .section1_text h3 {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+}
+.imgText .section1_text p {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=style.css.map */

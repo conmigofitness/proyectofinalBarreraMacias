@@ -1,0 +1,127 @@
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  .section1 {
+    width: 100%;
+
+    .titulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(94, 94, 94);
+      text-align: center;
+      width: 100%;
+
+      h1 {
+        font-family: "Roboto Mono", monospace;
+        font-weight: bold;
+        font-size: 40px;
+        color: rgb(25, 25, 26);
+      }
+    }
+
+    .rowBtn {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+
+      #themeBtn,
+      #verCatalogo,
+      #ocultarCatalogo {
+        border-color: 2px solid rgb(154, 95, 0);
+        color: rgb(0, 0, 0);
+        background-color: rgb(250, 200, 150);
+      }
+    }
+  }
+
+  .section2 {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(209, 194, 170);
+
+    .titulo_section2 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+
+      .titulo {
+        width: 100%;
+        border-bottom: solid 3px rgb(25, 25, 25);
+
+        h2 {
+          color: rgb(25, 25, 26);
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .container {
+    .row {
+      width: 100%;
+    }
+
+    .card {
+      height: 485px;
+      margin: 10px;
+      gap: 10px;
+      background-color: rgb(94, 94, 94);
+
+      .card-body {
+        background-color: rgb(180, 180, 180);
+      }
+
+      img {
+        height: 200px;
+        object-fit: scale-down;
+        background-color: rgb(209, 194, 170);
+      }
+
+      button {
+        background-color: rgb(209, 194, 170);
+        color: #000;
+      }
+    }
+  }
+}
+
+.imgText {
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(250, 200, 150);
+
+  .section1_text {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgb(250, 200, 150);
+    width: 100%;
+    font-size: 10px;
+
+    h3 {
+      text-align: center;
+      font-size: 35px;
+      color: rgb(25, 25, 26);
+    }
+
+    p {
+      font-size: 16px;
+      color: rgb(25, 25, 26);
+    }
+  }
+}

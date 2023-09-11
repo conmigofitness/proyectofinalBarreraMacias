@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+header {
+  background-color: rgb(250, 200, 150) !important;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  nav {
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+    border-bottom: solid 5px rgb(0, 0, 0);
+
+    .navbar {
+      #btn-search {
+        background-color: #999999;
+        background-color: rgb(94, 94, 94);
+      }
+    }
+    ul {
+      list-style: none;
+    }
+  }
+}
